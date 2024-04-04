@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/angular.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/css.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <title>Edu Mark</title>
+  </head>
+
+  <body ng-app="myapp">
+    <div class="container-fluid" ng-controller="myctrl">
+      <nav class="row">
+        <nav
+          class="navbar navbar-expand-lg navbar-light w-100"
+          style="background-color: rgb(156, 75, 235)"
+        >
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo.png"
+              width="154"
+              height="36"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav col-sm-10 ml-3 m-md-2">
+              <li class="nav-item">
+                <a class="nav-link" href="gioithieu.html"
+                  ><i class="fas fa-info"></i> Giới Thiệu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lienhe.html"
+                  ><i class="fas fa-phone"></i> Liên Hệ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gopy.html"
+                  ><i class="fas fa-comments"></i> Góp Ý</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hoidap.html"
+                  ><i class="fas fa-question-circle"></i> Hỏi Đáp</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav col-sm-2">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle float-sm-right"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i> {{taiKhoan}}
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="login.html">Đăng Nhập</a>
+                  <a class="dropdown-item" href="forgotPassword.html"
+                    >Quên Mật Khẩu</a
+                  >
+                  <a class="dropdown-item" href="register.html"
+                    >Đăng Kí Thành Viên</a
+                  >
+                  <a class="dropdown-item" href="#"></a>
+                  <a class="dropdown-item" href="#">Đăng Xuất</a>
+                  <a class="dropdown-item" href="doimatkhau.html"
+                    >Đổi Mật Khẩu</a
+                  >
+                  <a class="dropdown-item" href="doithongtintaikhoan.html"
+                    >Cập Nhập Tài khoản</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </nav>
+      <header class="row">
+        <div class="col-sm-6">
+          <img src="images/Untitled-1.png" />
+        </div>
+        <div class="col-sm-6">
+          <img src="images/edu_ilastration.png" />
+        </div>
+      </header>
+
+      <div class="row">
+        <article class="col-sm-9">
+          <div
+            class="alert alert-secondary mt-3"
+            style="font-size: 20px"
+            role="alert"
+          >
+            <a href="index.html" style="text-decoration: none">Trang chủ</a> /
+            Giới thiệu
+          </div>
+          <div class="col-10" style="margin-left: 100px">
+            <body>
+              <div class="panel" id="content">
+                  <!-- <div class="container"> -->
+                      <div class="panel ">
+                          <div class="panel-heading bg-info">
+                              <span class="glyphicon glyphicon-list"></span>GIỚI THIỆU CHUNG VỀ FPT POLYTECHNIC
+                          </div>
+                          <div class="panel-body text-center">
+                              <form action="">
+                                  <div class="row">
+                                      <div class="form-group col-sm-3">
+                                          <img width="110" height="110"
+                                              src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-1-110x110.png" alt=""
+                                              style="width:55px;"
+                                              data-lazy-src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-1-110x110.png"
+                                              data-ll-status="loaded" class="entered lazyloaded">
+                                          <h1>97,7%</h1>
+                                          <p>Sinh viên có việc làm</p>
+                                      </div>
+                                      <div class="form-group col-sm-3">
+                                          <img width="110" height="110"
+                                              src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-2-110x110.png" alt=""
+                                              style="width:60px;"
+                                              data-lazy-src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-2-110x110.png"
+                                              data-ll-status="loaded" class="entered lazyloaded">
+                                          <h1>2000+</h1>
+                                          <p>Doanh nghiệp đối tác</p>
+                                      </div>
+                                      <div class="form-group col-sm-3">
+                                          <img width="110" height="110"
+                                              src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-3-110x110.png" alt=""
+                                              style="width:60px;"
+                                              data-lazy-src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-3-110x110.png"
+                                              data-ll-status="loaded" class="entered lazyloaded">
+                                          <h1>40.000+</h1>
+                                          <p>Sinh viên & cựu sinh viên</p>
+                                      </div>
+                                      <div class="form-group col-sm-3">
+                                          <img width="110" height="110"
+                                              src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-4-110x110.png" alt=""
+                                              style="width:60px;"
+                                              data-lazy-src="https://caodang.fpt.edu.vn/wp-content/uploads/icon-4-110x110.png"
+                                              data-ll-status="loaded" class="entered lazyloaded">
+                                          <h1>11</h1>
+                                          <p>Cơ sở đào tạo toàn quốc</p>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="panel-header bg-success text-light">
+                                          <h3>TỔNG QUAN VỀ FPT POLYTECHNIC</h3>
+                                      </div>
+                                      <div class="panel-body">
+                                          <div class="panel-text" style="text-align: start;">
+                                              <p>
+                                                  Cao đẳng FPT Polytechnic hay còn biết đến là ngôi trường hệ đào tạo của FPT. Đây là
+                                                  ngôi trường nổi tiếng về các ngành công nghệ thông tin, marketing với phương châm
+                                                  “học đi đôi với hành”. Dưới đây là các thông tin chung của cao đẳng FPT Polytechnic
+                                                  để bạn có thể tham khảo: <br>
+              
+                                                  Website: https://caodang.fpt.edu.vn/ <br>
+                                                  Facebook: www.facebook.com/caodangfpt/ <br>
+                                                  Email: caodang@fpt.edu.vn <br>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                 
+                                  <div class="row">
+                                      <div class="panel-header bg-success text-light">
+                                          <h3>THỰC HỌC - THỰC HÀNH</h3>
+                                      </div>
+                                      <div class="panel-body">
+                                          <div class="panel-text" style="text-align: start;">
+                                              <p>
+                                                  Một ưu điểm nổi bật với phần lớn các trường đại học tại Việt Nam hiện nay chính là
+                                                  “Thực học - Thực hành”, “Học đi đôi với hành”. Điều này mang tính thực tế cao, giúp
+                                                  cho các sinh viên dễ dàng nắm bắt kiến thức, kinh nghiệm một cách tốt hơn. <br>
+              
+                                                  Đồng thời, trong quá trình học, sinh viên sẽ được tham gia vào các dự án thực tiễn
+                                                  tại doanh nghiệp. Điều này giúp cho các bạn dần làm quen với môi trường doanh
+                                                  nghiệp, trang bị cho bản thân những kỹ năng tốt nhất trước khi “bước vào đời”.
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                 
+                  </div>
+          
+                  <!-- Lặp lại quy trình trên cho các phần khác của trang -->
+          </div>
+          </div>
+        </article>
+        <aside class="col-sm-3">
+          <div class="card mt-2 ml-n2 mr-n2">
+            <div
+              class="card-header bg-danger"
+              style="color: mintcream; font-weight: bold"
+            >
+              <i class="fas fa-list pr-3"></i> DANH MỤC MÔN HỌC
+            </div>
+            <div class="card-body p-0">
+              <ul class="list-group">
+                <li class="list-group-item" ng-repeat="x in list">
+                  <a href="#" id="linkref"
+                    ><img src="logos/{{x.Logo}}" class="float-left col-3" />
+                    <span class="">{{x.Name}}</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <footer class="row">
+        <div class="card-footer bg-dark w-100">
+          <p class="abcc">Cao Đẳng FPT Polytechnic</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+<script>
+  var app = angular.module("myapp", []);
+  app.controller("myctrl", function ($scope, $http) {
+    // lấy vị tri index của user
+    var viTri = 0;
+    if (typeof Storage !== "undefined") {
+      //get sessionStorage
+      var viTri = sessionStorage.getItem("index");
+    } else {
+      alert("Trình duyệt của bạn đã quá cũ. Hãy nâng cấp trình duyệt ngay!");
+    }
+    // get list môn học
+    $scope.list = [];
+    $http.get("db/Subjects.js").then(function (d) {
+      $scope.list = d.data;
+    });
+    // get list sinh vien
+    $scope.student = {};
+    $scope.students = [];
+    $http.get("db/Students.js").then(function (d) {
+      $scope.students = d.data;
+      if (viTri == null) {
+        $scope.taiKhoan = "Tài Khoản";
+      } else {
+        $scope.taiKhoan = $scope.students[viTri].fullname;
+      }
+    });
+  });
+</script>

@@ -1,0 +1,53 @@
+body {
+  margin: auto;
+  width: 100%;
+  /* background-color: rgb(161, 211, 243); */
+}
+/*--HEADER--*/
+.container-fluid {
+  width: 100%;
+}
+header {
+  height: 250px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+header img {
+  width: 100%;
+  height: 250px;
+}
+nav {
+  width: 100%;
+  /* background-color: lightskyblue; */
+}
+nav.row {
+  height: 30px;
+  position: fixed;
+  width: 9999999;
+  z-index: 1;
+}
+article {
+  height: 100px;
+}
+aside {
+  min-height: 30px;
+}
+footer {
+  height: 30px;
+}
+.list li {
+  list-style: none;
+}
+
+a#linkref {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+a#linkref:hover {
+  color: orange;
+}
+.card-footer:hover {
+  background-color: rgb(249, 184, 64);
+}

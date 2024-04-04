@@ -1,0 +1,78 @@
+<div class="alert alert-secondary mt-2" style="font-size: 20px" role="alert">
+  <a href="index.html" style="text-decoration: none">Trang chủ</a> / Đổi mật
+  khẩu
+</div>
+<div class="container" style="margin-top: 20px">
+  <div class="row">
+    <div class="col-12">
+      <div class="panel panel-warning">
+        <div class="panel-heading bg-warning">
+          <h3 class="text-center">Đổi mật khẩu!</h3>
+        </div>
+        <div class="panel-body">
+          <form
+            id="register-form"
+            role="form"
+            autocomplete="off"
+            class="form"
+            method="post"
+          >
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-key"></i
+                  ></span>
+                </div>
+                <input
+                  placeholder="Nhập mật khẩu cũ"
+                  class="form-control"
+                  required
+                  ng-model="student.password"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-unlock-alt"></i
+                  ></span>
+                </div>
+                <input
+                  placeholder="Nhập mật khẩu mới"
+                  class="form-control"
+                  required
+                  ng-model="student.xnmk"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-unlock"></i
+                  ></span>
+                </div>
+                <input
+                  placeholder="Xác nhận mật khẩu"
+                  class="form-control"
+                  required
+                  ng-model="student.xnmk1"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <button
+                class="btn btn-lg btn-warning btn-block"
+                ng-click="click11()"
+              >
+                Đổi mật khẩu
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="alert alert-secondary bg-dark text-light mt-2" style="font-size: 20px;" role="alert">
+    <a href="index.html" style="text-decoration: none;color: white;">Trang chủ</a> / Góp ý
+  </div>
+
+  <div class="card">
+    <div id="feedback-form">
+      <div class="card">
+          <div class="card-header bg-warning">
+              <span class="glyphicon glyphicon-envelope"></span>FORM GÓP Ý
+          </div>
+          <div class="card-body">
+              <form action="">
+                  <div class="row">
+                      <div class="form-group col-5">
+                          <label for="">Ý kiến 1</label>
+                          <input type="text" class="form-control" placeholder="">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-5">
+                          <label for="">Ý kiến 2</label>
+                          <input type="text" class="form-control">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-5">
+                          <span class="glyphicon glyphicon-plus"></span><label for="">Thêm ý kiến</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-5">
+                          <label for="">Ghi chú:</label>
+                          <input type="text" class="form-control">
+                      </div>
+                  </div>
+                  <br>
+
+          </div>
+          <div class="row col-sm-5">
+              <div class="form-group col">
+                  <button type="submit" class="btn btn-info">
+                      <span class="glyphicon glyphicon-send"></span>   Gửi
+                  </button>
+                  <button type="submit" class="btn btn-danger text-dark">
+                      <span class="glyphicon glyphicon-remove text-dark"></span>   Hủy
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+      $("#feedback-form").submit(function(event) {
+          event.preventDefault();
+          alert("Đã gủi góp ý của bạn!");
+      });
+  });
+</script>
+
+  </div>
